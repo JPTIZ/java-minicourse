@@ -40,7 +40,7 @@ Se a mensagem acima aparecer, significa que:
 Todos os códigos do minicurso podem ser executados com:
 
 ```sh
-$ java Main.java
+$ java Main
 ```
 
 ### Contato
