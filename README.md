@@ -4,6 +4,10 @@
 
 Informações a respeito do minicurso podem ser encontradas em http://pet.inf.ufsc.br/~jptiz/cursos.
 
+### Slides
+
+Os slides do minicurso estão no diretório do Google Drive: https://drive.google.com/open?id=0B87Ey7dWqYaCSVlyWk9nRzZWNzg.
+
 ### Padrões
 
 Os códigos-fonte do minicurso adotam os seguintes padrões:
