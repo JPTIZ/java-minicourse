@@ -1,23 +1,25 @@
-# Minicurso de Java - Módulo I
+# Minicurso de Java - Módulos I e II
 
 ### Sobre
 
-Informações a respeito do minicurso podem ser encontradas em http://pet.inf.ufsc.br/~jptiz/cursos.
+Informações a respeito dos minicursos podem ser encontradas em http://pet.inf.ufsc.br/~jptiz/cursos.
 
 ### Slides
 
-Os slides do minicurso estão no diretório do Google Drive: https://drive.google.com/open?id=0B87Ey7dWqYaCSVlyWk9nRzZWNzg.
+Os slides dos minicursos estão nos diretórios do Google Drive:
+* [Módulo I](https://drive.google.com/open?id=0B87Ey7dWqYaCSVlyWk9nRzZWNzg)
+* [Módulo II](https://drive.google.com/open?id=0B9adq18P3F9fc2hlRzBnRkZoeVE)
 
 ### Padrões
 
-Os códigos-fonte do minicurso adotam os seguintes padrões:
+Os códigos-fonte dos minicursos adotam os seguintes padrões:
 
  - Código em inglês, comentários em português
  - Cada trecho de código possui um comentário logo acima explicando o que nele acontece, para fins didáticos
 
 ### Compilação
 
-Todos os códigos do minicurso podem ser compilados com:
+Todos os códigos dos minicursos podem ser compilados com:
 
 ```sh
 $ javac *.java
@@ -41,7 +43,7 @@ Se a mensagem acima aparecer, significa que:
 
 ### Execução
 
-Todos os códigos do minicurso podem ser executados com:
+Todos os códigos dos minicursos podem ser executados com:
 
 ```sh
 $ java Main
