@@ -2,7 +2,7 @@
 // Aula 01 - Variáveis e estruturas condicionais
 //-----------------------------------------------------------------------------
 // Problemática:
-// Criar um programa simples que simule uma loja. 
+// Criar um programa simples que simule uma loja.
 //=============================================================================
 
 public class Main {
