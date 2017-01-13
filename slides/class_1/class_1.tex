@@ -8,10 +8,15 @@
 \usepackage{dirtytalk}
 \usepackage{graphicx}
 \usepackage{minted}
+\usepackage{menukeys}
+
+\graphicspath{{img/}}
 
 \title{Minicurso de Java}
 \subtitle{Introdução a Java}
 \author{João Paulo Taylor Ienczak Zanette}
+
+\newcommand{\icon}[1]{\raisebox{-.2\height}{\includegraphics[keepaspectratio,width=1em]{#1}}}
 
 \begin{document}
 
@@ -102,10 +107,10 @@ public class Application {
 
 
 \begin{frame}{Utilizando o compilador de Java}
-    Se estiver utilizando o eclipse, basta executar o comando "Build". Executar
-    e aplicação ("Run") também chama o compilador.
+    Se estiver utilizando o Eclipse, basta utilizar \menu{Project > Build
+    Project}. Executar a aplicação também chama o compilador.
 
-    Se estiver em um terminal, basta chamar:
+    Se estiver em um terminal, basta executar:
 
     \texttt{javac Application.java}
 \end{frame}
@@ -118,7 +123,7 @@ public class Application {
 \end{frame}
 
 
-\begin{frame}[fragile]{Bytecode gerado}
+\begin{frame}[fragile]{\textit{Bytecode} gerado}
     \begin{minted}{java}
 public class Application {
   public Application();
@@ -139,7 +144,7 @@ public class Application {
 
 
 \begin{frame}{Executando uma aplicação Java}
-    Se estiver utilizando o Eclipse, basta executar o comando Executar ("Run").
+    Se estiver utilizando o Eclipse, basta pressionar F11 (\menu{\icon{eclipse_run} Run}).
 
     Se estiver em um terminal, basta chamar:
 
