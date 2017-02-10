@@ -12,4 +12,5 @@ all: $(OBJS)
 .PHONY: clean
 
 clean:
-	rm -f *.{aux,bbl,blg,pdf,log}
+	rm -f *.{aux,bbl,blg,pdf,log,nav,out,snm,toc,vrb}
+	rm -rf _minted-class_1
