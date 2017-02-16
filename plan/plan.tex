@@ -1,0 +1,167 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+
+\usepackage[inline]{enumitem}
+
+\usepackage{listing}
+
+\title{Programa do Minicurso}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Identificação}
+
+\begin{itemize}
+    \item[] Disciplina: Minicurso Java
+    \item[]
+        \hspace{-1em}
+        \begin{tabular}{ccc}
+            Carga Horária: 18 horas-aula&
+            Teóricas: 8&
+            Práticas: 12
+        \end{tabular}
+    \item[] Período: Março a Maio de 2017.
+\end{itemize}
+
+\section{Cursos (público alvo)}
+\begin{itemize}
+    \item[] Ciências da Computação;
+    \item[] Sistemas de Informação.
+\end{itemize}
+
+\section{Requisitos}
+\begin{itemize}
+    \item[] Nenhum.
+\end{itemize}
+
+\section{Ementa}
+\begin{itemize*}[label={}]
+    % Básico
+     \item Aritmética em programação;
+     \item Estruturas Condicionais e de Seleção;
+     \item Estruturas de Repetição;
+     \item Métodos, Procedimentos e Funções;
+    % Orientação a Objetos
+     \item Encapsulamento de variáveis;
+     \item Interfaces;
+     \item Tipos definidos por usuário;
+     \item Classes abstratas;
+    % Engenharia de Software
+     \item Padrões de Projeto;
+     \item Diagramas UML (\textit{Unified Modeling Language}): Classes
+         e Casos de Uso;
+    % GUI
+     \item Componentes básicos AWT (\textit{Abstract Window Toolkit});
+     \item Modelo Observador-Observável;
+     \item Modelo MVC;
+    % Geral
+     \item \textit{Callback};
+     \item Reuso;
+     \item Boas Práticas de Programação (padrões de nomenclatura/casing, etc.);
+     \item Funções \textit{lambda};
+    % Otimização
+     \item \textit{Cache friendliness};
+    % Java-specific
+     \item \textit{Generics};
+     \item Classe Anônima;
+     \item Mecanismo de alocação de memória da JVM;
+    % Eclipse
+     \item Introdução à ferramenta de desenvolvimento Eclipse;
+     \item Depuração;
+    % Ciência da Computação
+     \item Análise de Algoritmos e Complexidade Assintótica;
+    % Limbo of decisions
+     \item \textit{HashMap};
+     \item Serialização;
+\end{itemize*}
+
+\section{Objetivos}
+\begin{description}
+    \item[Geral:] Auxiliar na aprendizagem das disciplinas de
+        Programação Orientada a Objetos 1 e 2, produzindo um projeto em
+        console Java, seguido de sua adaptação para interface gráfica,
+        mostrando normas e passos para um código bem feito e
+        reutilizável.
+    \item[Específico:] São objetivos do minicurso:
+        \begin{itemize}[label={-}]
+            \item Apresentar as especificidades básicas da linguagem
+                Java, dentre elas:
+                \begin{itemize}[label={-}]
+                    \item Classe principal e método \texttt{main};
+                    \item Formas de declarar/instanciar variáveis e
+                        vetores;
+                    \item Ciclo de vida das variáveis;
+                    \item Referência e cópia;
+                    \item Funcionamento do método construtor.
+                \end{itemize}
+            \item Criar um projeto simples para mostrar o uso das
+                estruturas básicas (comparação, seleção, repetição,
+                funções...) da programação imperativa;
+            \item Melhorar o desempenho e entendimento dos alunos nas
+                disciplinas de Programação Orientada a Objetos 1 e 2;
+            \item Instruir os participantes a respeito das boas
+                práticas de programação, a fim de que façam códigos bem
+                estruturados, reutilizáveis e legíveis, aplicando
+                conceitos de código-limpo e que façam escolhas
+                adequadas de padrões de projetos;
+            \item Introduzir noções de algoritmos e resolução de
+                problemas computacionalmente;
+            \item Criar um projeto com enfoque no interfaceamento
+                gráfico e uso de diferentes recursos de programação
+                orientada a objetos (interfaces, classes, classes
+                abstratas...);
+            \item Expor formas de melhorar a manutenibilidade de
+                software.
+        \end{itemize}
+\end{description}
+
+\section{Conteúdo Programático}
+
+\begin{enumerate}
+    \item Introdução a Java (2 horas):
+        \begin{enumerate}
+            \item Características principais da linguagem;
+            \item Processo de compilação e \textit{Bytecode};
+            \item Processo de execução da JVM (\textit{Java Virtual Machine});
+            \item Introdução ao paradigma Imperativo;
+            \item Tipos primitivos;
+            \item Estruturas condicionais.
+        \end{enumerate}
+    \item Coleções (2 horas):
+        \begin{enumerate}
+            \item Laços de repetição;
+            \item \textit{Raw-arrays};
+            \item Tempo de vida de variáveis: Escopo;
+            \item Matrizes;
+            \item \textit{Cache-friendliness}.
+        \end{enumerate}
+    \item Tipos definidos por usuário (2 horas):
+        \begin{enumerate}
+            \item Classes e objetos;
+            \item Atributos;
+            \item Alocação de memória na JVM;
+            \item Garbage-Collection;
+        \end{enumerate}
+    \item Introdução a Algoritmos (2 horas):
+        \begin{enumerate}
+            \item Busca linear e \textit{Binary-Search};
+            \item Complexidade de Algoritmos;
+            \item Notação assintótica;
+            \item \textit{Binary-Sort}.
+        \end{enumerate}
+\end{enumerate}
+
+\section{Cronograma}
+
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{plan}
+
+\end{document}
