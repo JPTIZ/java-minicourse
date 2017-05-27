@@ -6,9 +6,7 @@ Informações a respeito dos minicursos podem ser encontradas em http://pet.inf.
 
 ### Slides
 
-Os slides dos minicursos estão nos diretórios do Google Drive:
-* [Módulo I](https://drive.google.com/open?id=0B87Ey7dWqYaCSVlyWk9nRzZWNzg)
-* [Módulo II](https://drive.google.com/open?id=0B9adq18P3F9fc2hlRzBnRkZoeVE)
+Os slides do minicurso estão na pasta [slides](slides/) deste repositório.
 
 ### Padrões
 
@@ -52,3 +50,9 @@ $ java Main
 ### Contato
 
 E-mail: jlz@labmetro.ufsc.br
+
+### Slides Antigos
+
+Os slides antigos do minicurso podem ser encontrados no Google Drive:
+* [Módulo I](https://drive.google.com/open?id=0B87Ey7dWqYaCSVlyWk9nRzZWNzg)
+* [Módulo II](https://drive.google.com/open?id=0B9adq18P3F9fc2hlRzBnRkZoeVE)
