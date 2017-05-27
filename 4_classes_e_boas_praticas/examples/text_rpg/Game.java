@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class Game {
+    public Game() {
+        this.heroes = new Hero[] {
+            null,
+            new Hero("O Bardo",
+                    50, 8,
+                    33, 17,
+                    6, 1,
+                    17, 2
+            ),
+            new Hero("O Guerreiro",
+                    20, 2,
+                    18, 12,
+                    19, 4,
+                    7, 1
+            ),
+        };
+    }
+
+    public void start() {
+        System.out.print(
+                "Bem-vindo ao mundo mágico de Java.\n" +
+                "Este é um mundo perigoso onde terríveis criaturas moram.\n" +
+                "Você estaria preparado para enfrentar o que há por vir?\n" +
+                "S/N: "
+        );
+
+        Scanner reader = new Scanner(System.in);
+        while (true) {
+            String answer = reader.nextLine();
+            if (answer.equals("S")) {
+                break;
+            } else if (answer.equals("N")) {
+                System.out.println(
+                        "Ora, é uma pena.\n" +
+                        "Apenas os valentes podem viver aqui. Adeus.");
+                return;
+            }
+        }
+        System.out.print(
+                "Foi uma sábia decisão. Qual o seu nome, jovem gafanhoto?\n" +
+                "Resposta: "
+        );
+
+        this.heroes[0] =
+            new Hero(reader.nextLine(),
+                    30, 3,
+                    20, 15,
+                    15, 3,
+                    13, 2
+            );
+
+        System.out.printf(
+                "Seja bem-vindo, %s.\n", heroes[0].getName()
+        );
+
+        Adventure adventure = new Adventure(this);
+        adventure.start();
+    }
+
+    public Hero[] getHeroes() {
+        return heroes;
+    }
+
+    private Hero[] heroes;
+}
