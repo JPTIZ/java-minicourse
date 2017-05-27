@@ -43,7 +43,7 @@ public class Adventure {
     }
 
     public void hunt() {
-        int enemyGroupId = (int)(Math.random() * 3);
+        int enemyGroupId = (int)(Math.random() * 4);
 
         BattleScene battle = new BattleScene(game, enemyGroupId);
         battle.start();

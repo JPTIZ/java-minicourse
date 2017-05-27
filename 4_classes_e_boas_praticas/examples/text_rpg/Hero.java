@@ -26,7 +26,7 @@ public class Hero {
 
         this.healthIncrement = healthIncrement;
         this.expIncrement = expIncrement;
-        this.healthIncrement = healthIncrement;
+        this.attackIncrement = attackIncrement;
         this.defenseIncrement = defenseIncrement;
 
         this.defending = false;

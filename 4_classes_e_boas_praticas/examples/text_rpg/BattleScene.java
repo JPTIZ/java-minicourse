@@ -69,6 +69,31 @@ public class BattleScene {
                     ),
                 };
                 break;
+            case 3:
+                enemies = new Enemy[] {
+                    new Enemy(
+                            "Scorpion A",
+                            17,
+                            17,
+                            8,
+                            7
+                    ),
+                    new Enemy(
+                            "Scorpion B",
+                            17,
+                            17,
+                            8,
+                            7
+                    ),
+                    new Enemy(
+                            "Slime",
+                            10,
+                            10,
+                            10,
+                            3
+                    ),
+                };
+                break;
         }
     }
 
