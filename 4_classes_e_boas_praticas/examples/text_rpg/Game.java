@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Game {
     public Game() {
         this.heroes = new Hero[] {
-            null,
+            null, // Isso é uma má ideia na verdade, mas será mantida porque
+                  // não vismo ainda vetores de tamanho dinâmico.
             new Hero("O Bardo",
                     50, 8,
                     33, 17,
@@ -37,6 +38,9 @@ public class Game {
                         "Ora, é uma pena.\n" +
                         "Apenas os valentes podem viver aqui. Adeus.");
                 return;
+            } else {
+                System.out.println(
+                        "Opção inválida. Apenas \"S\" ou \"N\" são permitidos.");
             }
         }
         System.out.print(

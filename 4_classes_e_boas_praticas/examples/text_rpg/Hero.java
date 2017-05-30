@@ -86,7 +86,7 @@ public class Hero {
         if (isDead()) {
             return;
         }
-        damage = damage - defense;
+        damage -= defense;
 
         if (defending) {
             damage /= 2;
