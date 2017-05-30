@@ -141,7 +141,6 @@ public class Hero {
         }
     }
 
-    // Attributes
     private String name;
 
     private int level;

@@ -271,7 +271,10 @@ public class BattleScene {
         }
     }
 
-    private boolean isAllEnemiesDead() {
+    private boolean isAllEnemiesDead() { // o padrão de nomenclatura de Java
+                                         // estabelece "is" como métodos que
+                                         // retornam bool. Semanticamente fica
+                                         // estranho, mas...
         // Procuramos pelo primeiro inimigo que não está nocauteado
         for (Enemy enemy: enemies) {
             if (!enemy.isDead()) {
