@@ -9,3 +9,4 @@
 **/*.vrb
 **/_minted*
 **/*.swp
+**/*.class
