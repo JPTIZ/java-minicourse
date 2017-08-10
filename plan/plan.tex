@@ -27,7 +27,7 @@
             Teóricas: 10&
             Práticas: 10
         \end{tabular}
-    \item[] Período: Abril a Junho de 2017.
+    \item[] Período: Setembro a Novembro de 2017.
 \end{itemize}
 
 \section{Cursos (público alvo)}
@@ -43,48 +43,66 @@
 
 \section{Ementa}
 \begin{itemize*}[label={}]
-    % Básico
-     \item Aritmética em programação; %OK%
-     \item Estruturas Condicionais e de Seleção; %OK - Falta Seleção%
-     \item Estruturas de Repetição; %OK%
-     \item Métodos, Procedimentos e Funções; %OK%
-    % Orientação a Objetos
-     \item Encapsulamento de atributos; %OK%
-     \item Interfaces; %OK%
-     \item Tipos definidos por usuário; %OK%
-     \item Classes abstratas; %OK%
-    % Engenharia de Software
-     \item Padrões de Projeto; %OK%
-     \item Diagramas UML (\textit{Unified Modeling Language}): Classes
-         e Casos de Uso; %OK%
-    % GUI
-     \item Componentes básicos AWT (\textit{Abstract Window Toolkit}); %OK%
-     \item Padrão Observador-Observável; %OK%
-     \item Padrão MVC\@; %OK%
-    % Mídia
-     \item \textit{Bitmaps}; %OK%
-     \item \textit{Double-Buffering}; %OK%
-     \item \textit{Page-Flipping}; %OK%
-    % Geral
-     \item \textit{Callback}; %OK%
-     \item Reuso; %OK%
-     \item Boas Práticas de Programação (padrões de nomenclatura/casing, etc.); %OK%
-     \item Funções \textit{lambda}; %OK%
-    % Otimização
-     \item \textit{Cache friendliness}; %OK%
-    % Java-specific
-     \item \textit{Generics}; %OK%
-     \item Classe Anônima; %OK%
-     \item Mecanismo de alocação de memória da JVM\@; %OK%
-    % Eclipse
-     \item Introdução à ferramenta de desenvolvimento Eclipse; %OK%
-     \item Depuração; %OK%
-    % Ciência da Computação
-     \item Análise de Algoritmos e Complexidade Assintótica; %OK%
-    % Limbo of decisions
-     \item \textit{HashMap}; %OK%
-     \item \textit{Streams}; %OK%
-     \item Serialização. %OK%
+        % Básico
+    \item Características principais da linguagem;
+    \item Aritmética em programação;
+    \item Estruturas Condicionais e de Seleção;
+    \item Estruturas de Repetição;
+    \item Métodos, Procedimentos e Funções;
+
+        % Orientação a Objetos
+    \item Tipos definidos por usuário;
+    \item Conceito de Classe, Objeto e Atributo;
+    \item Interfaces;
+    \item Métodos \textit{default} e encapsulamento de atributos;
+    \item Classes abstratas;
+
+        % Java-specific
+    \item Processo de compilação e \textit{Bytecode};
+    \item \textit{Generics};
+    \item Classe Anônima;
+    \item Mecanismo de alocação de memória da JVM\@;
+    \item Elementos estáticos;
+
+        % Engenharia de Software
+    \item Reuso;
+    \item Padrões de Projeto;
+    \item Diagramas UML (\textit{Unified Modeling Language}): Classes
+        e Casos de Uso;
+    \item Padrão de projeto MVC\@;
+    \item Padrão de projeto Composição;
+
+        % Geral
+    \item Tempo de vida de variáveis;
+    \item Boas Práticas de Programação (padrões de nomenclatura/casing, etc.);
+    \item Desenvolvimento de APIs adequadas;
+    \item Tratamento de Exceções;
+    \item \textit{Callback};
+    \item Funções \textit{lambda};
+
+        % Otimização
+    \item \textit{Cache friendliness};
+    \item \textit{JIT Compilation};
+    \item Mecanismo de otimização da JVM\@;
+    \item Disco rígido: \textit{Disk buffer};
+    \item Algoritmos de escalonamento de disco;
+
+        % Ciência da Computação
+    \item Algoritmos de busca e ordenação;
+    \item Análise de Algoritmos e Complexidade Assintótica;
+    \item Complexidade amortizada;
+
+        % Limbo of decisions
+    \item \textit{HashMap};
+    \item \textit{Streams};
+    \item Serialização;
+
+        % Eclipse
+    \item Ferramenta de desenvolvimento Eclipse;
+    \item Depuração;
+
+        % Estruturas de dados
+    \item Listas e Pilhas.
 \end{itemize*}
 
 \section{Objetivos}
@@ -118,12 +136,10 @@
                 adequadas de padrões de projetos;
             \item Introduzir noções de algoritmos e resolução de
                 problemas computacionalmente;
-            \item Criar um projeto com enfoque no interfaceamento
-                gráfico e uso de diferentes recursos de programação
-                orientada a objetos (interfaces, classes, classes
-                abstratas\ldots);
-            \item Expor formas de melhorar a manutenibilidade de
-                software.
+            \item Criar um projeto com enfoque no uso de diferentes recursos de
+                programação orientada a objetos (interfaces, classes, classes
+                abstratas, \ldots);
+            \item Expor formas de melhorar a manutenibilidade de software.
         \end{itemize}
 \end{description}
 
@@ -131,134 +147,158 @@
 
 \begin{enumerate}
     \item Introdução a Java (2 horas):
-        \begin{enumerate}
-            \item Características principais da linguagem;
-            \item Processo de compilação e \textit{Bytecode};
-            \item Processo de execução da JVM (\textit{Java Virtual Machine});
-            \item Introdução ao paradigma Imperativo;
-            \item Tipos primitivos;
-            \item Estruturas condicionais: \texttt{if}.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Características principais da linguagem;
+                \item Processo de compilação e \textit{Bytecode};
+                \item Introdução à JVM (\textit{Java Virtual Machine});
+                \item Introdução ao paradigma Imperativo;
+                \item Tipos primitivos;
+                \item Estruturas condicionais: \texttt{if}.
+            \end{enumerate}
+        \end{samepage}
     \item Coleções (2 horas):
-        \begin{enumerate}
-            \item Laços de repetição;
-            \item \textit{Raw-arrays};
-            \item Tempo de vida de variáveis: Escopo;
-            \item Matrizes;
-            \item \textit{Cache-friendliness}.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Laços de repetição: \textit{while} e \textit{for};
+                \item \textit{Raw-arrays};
+                \item Tempo de vida de variáveis: Escopo;
+                \item Matrizes;
+                \item \textit{Cache-friendliness}.
+            \end{enumerate}
+        \end{samepage}
     \item Tipos definidos por usuário (2 horas):
-        \begin{enumerate}
-            \item Classes e objetos;
-            \item Atributos;
-            \item Alocação de memória na JVM\@;
-            \item Garbage-Collection;
-            \item Tempo de vida de variáveis: Objetos;
-            \item Elementos estáticos.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Conceito de Classe, Objeto e Atributo;
+                \item Alocação de memória na JVM\@;
+                \item \textit{Garbage-Collection};
+                \item Tempo de vida de objetos;
+                \item Elementos estáticos.
+            \end{enumerate}
+        \end{samepage}
     \item Introdução a Algoritmos (2 horas):
-        \begin{enumerate}
-            \item Introdução a funções e procedimentos;
-            \item Busca linear e \textit{Binary-Search};
-            \item Complexidade de Algoritmos;
-            \item Notação assintótica;
-            \item \textit{Bubble-Sort}.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Introdução a funções e procedimentos;
+                \item Busca linear e binária;
+                \item Complexidade de Algoritmos;
+                \item Notação assintótica;
+                \item \textit{Bubble-Sort}.
+            \end{enumerate}
+        \end{samepage}
     \item Métodos, funções e procedimentos (2 horas):
-        \begin{enumerate}
-            \item Cópia e Referência;
-            \item Depuração de código;
-            \item Encapsulamento de atributos;
-            \item Boas práticas: API\@.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Cópia e Referência;
+                \item Depuração de código;
+                \item Encapsulamento de atributos;
+                \item Boas práticas: API\@.
+            \end{enumerate}
+        \end{samepage}
     \item Padrões de Projeto (2 horas):
-        \begin{enumerate}
-            \item Diagrama de Casos de Uso;
-            \item Padrão MVC\@;
-            \item \textit{HashMap};
-            \item Diagrama de Classes.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Diagrama de Casos de Uso;
+                \item Padrão de projeto MVC\@;
+                \item \textit{HashMap};
+                \item Diagrama de Classes.
+            \end{enumerate}
+        \end{samepage}
     \item Persistência (2 horas):
-        \begin{enumerate}
-            \item \textit{Streams};
-            \item Serialização;
-            \item Dependência entre objetos.
-        \end{enumerate}
-    \item Interface Gráfica (2 horas):
-        \begin{enumerate}
-            \item Componentes básicos AWT/\texttt{javax.swing};
-            \item \textit{GridLayout};
-            \item Padrão Observador-Observável;
-            \item \textit{Callback};
-            \item Funções \textit{lambda};
-            \item Classes anônimas.
-        \end{enumerate}
-    \item Gráficos e renderização (2 horas):
-        \begin{enumerate}
-            \item Enumeradores;
-            \item Estrutura de seleção;
-            \item Cores RGB\@;
-            \item \textit{Bitmaps};
-            \item \textit{Double-Buffering};
-            \item \textit{Page-Flipping}.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item \textit{Streams};
+                \item Serialização;
+                \item Disco rígido: \textit{Disk buffer};
+                \item Algoritmos de escalonamento de disco;
+                \item Tratamento de Exceções.
+            \end{enumerate}
+        \end{samepage}
     \item Introdução a Estruturas de Dados (2 horas):
-        \begin{enumerate}
-            \item \textit{Generics};
-            \item Lista com vetor;
-            \item Lista encadeada;
-            \item Interfaces;
-            \item Classes abstratas;
-            \item Pilha;
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item \textit{Generics};
+                \item Lista com vetor;
+                \item Lista encadeada;
+                \item Complexidade amortizada;
+                \item Generics;
+                \item Pilha;
+                \item Padrão de projeto: Composição.
+            \end{enumerate}
+        \end{samepage}
+    \item Outros aspectos da linguagem (2 horas):
+        \begin{samepage}
+            \begin{enumerate}
+                \item Interfaces;
+                \item Métodos \textit{default};
+                \item Classes abstratas;
+                \item \textit{JIT Compilation};
+                \item Otimizações da JVM\@.
+            \end{enumerate}
+        \end{samepage}
 \end{enumerate}
 
 \section{Cronograma}
 
 \begin{enumerate}[label= (\alph*)]
     \item Primeiro encontro:
-        \begin{enumerate}
-            \item Introdução a Java;
-            \item Apresentação do material de apoio.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Introdução a Java;
+                \item Apresentação do material de apoio.
+            \end{enumerate}
+        \end{samepage}
     \item Segundo encontro:
-        \begin{enumerate}
-            \item Coleções.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Coleções.
+            \end{enumerate}
+        \end{samepage}
     \item Terceiro encontro:
-        \begin{enumerate}
-            \item Tipos definidos por usuário.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Tipos definidos por usuário.
+            \end{enumerate}
+        \end{samepage}
     \item Quarto encontro:
-        \begin{enumerate}
-            \item Introdução a Algoritmos.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Introdução a Algoritmos.
+            \end{enumerate}
+        \end{samepage}
     \item Quinto encontro:
-        \begin{enumerate}
-            \item Métodos, funções e procedimentos.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Métodos, funções e procedimentos.
+            \end{enumerate}
+        \end{samepage}
     \item Sexto encontro:
-        \begin{enumerate}
-            \item Padrões de Projeto;
-            \item Menção a padrões de projeto não abordados na aula.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Padrões de Projeto;
+                \item Menção a padrões de projeto não abordados na aula.
+            \end{enumerate}
+        \end{samepage}
     \item Sétimo encontro:
-        \begin{enumerate}
-            \item Persistência.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Persistência.
+            \end{enumerate}
+        \end{samepage}
     \item Oitavo encontro:
-        \begin{enumerate}
-            \item Interface Gráfica.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Introdução a Estruturas de Dados;
+            \end{enumerate}
+        \end{samepage}
     \item Nono encontro:
-        \begin{enumerate}
-            \item Gráficos e renderização.
-        \end{enumerate}
-    \item Décimo encontro:
-        \begin{enumerate}
-            \item Introdução a Estruturas de Dados;
-            \item Conclusões e menções a respeito do criticismo de Java.
-        \end{enumerate}
+        \begin{samepage}
+            \begin{enumerate}
+                \item Outros aspectos da linguagem;
+                \item Conclusões e menções a respeito do criticismo de Java.
+            \end{enumerate}
+        \end{samepage}
 \end{enumerate}
 
 \nocite{*}
