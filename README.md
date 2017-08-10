@@ -49,7 +49,7 @@ $ java Main
 
 ### Contato
 
-E-mail: jlz@labmetro.ufsc.br
+E-mail: jpaulotiz@gmail.com
 
 ### Slides Antigos
 
