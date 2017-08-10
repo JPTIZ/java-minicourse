@@ -39,9 +39,8 @@ public class Main {
             double totalProduct = costs[i] * quantities[i];
             // Exibe o total gasto por ele. Note que agora utiliza-se o vetor
             // com os nomes dos produtos para saber o nome de cada produto.
-            System.out.println(
-                        "Total gasto com " + products[i] + ": R$" + totalProduct
-                    );
+            System.out.printf("Total gasto com %s: R$%.2f\n",
+                              products[i], totalProduct);
             // O total gasto com cada produto é somado ao total gasto com a
             // compra
             total += totalProduct;
@@ -49,6 +48,6 @@ public class Main {
 
         // Ao fim, o valor da compra já estará calculado, bastando apenas
         // exibi-lo
-        System.out.println("Total da compra: R$" + total);
+        System.out.printf("Total da compra: R$%.2f\n", total);
     }
 }

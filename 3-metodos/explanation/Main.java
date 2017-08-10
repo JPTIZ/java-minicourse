@@ -13,7 +13,7 @@
 public class Main {
     // Para não ficarmos repetindo as operações de mostrar o conteúdo dos
     // vetores (que é a mesma, independente de qual vetor seja), criaremos um
-    // método chamado `showVector`.
+    // método chamado `showArray`.
     // Perceba que ele está marcado como `public` e `static`, assim como o
     // `main`. Por enquanto teremos que ignorar estas palavrinhas por enquanto,
     // mas elas farão mais sentido na próxima aula (nº 4).
@@ -46,10 +46,10 @@ public class Main {
     //
     //   Nome:
     //     É o nome do método propriamente dito, por exemplo: "println",
-    //       "main", e no nosso caso, `showVector` e "invertVector".
+    //       "main", e no nosso caso, `showArray` e "invertArray".
     //     OBS: Tente sempre ser o mais intuitivo o possível ao dar nomes
     //       aos métodos. Dar nomes como "x", "aux" e "sV" (na tentativa de
-    //       encurtar `showVector`) dificultam a __manutenção__ do código,
+    //       encurtar `showArray`) dificultam a __manutenção__ do código,
     //       principalmente se outras pessoas forem utilizar um método que
     //       você tenha criado. Tente pensar por exemplo se o método
     //       "println" se chamasse "pln": qualquer pessoa que lesse o
@@ -60,7 +60,7 @@ public class Main {
     //
     //   Parâmetros:
     //     São opcionais (basta deixar os parênteses vazios).
-    //     No caso do método `showVector`, nenhuma linguagem de
+    //     No caso do método `showArray`, nenhuma linguagem de
     //       programação vai magicamente advinhar qual que é o vetor
     //       que será exibido quando o método for chamado. Ou seja,
     //       precisamos dizer ao método qual é o vetor que será exibido, e para
@@ -70,32 +70,32 @@ public class Main {
     //       tipo nome
     //     Portanto, se nosso método irá receber um vetor de inteiros,
     //       definimos o parâmetro como:
-    //         `int[] vector`
-    //     Assim, quem quiser utilizar o método `showVector` precisará enviar
+    //         `int[] array`
+    //     Assim, quem quiser utilizar o método `showArray` precisará enviar
     //       um vetor de inteiros dentro dos parênteses.
     //
-    public static void showVector(int[] vector) {
-        for (int i = 0; i < vector.length; i++) {
-            System.out.print(vector[i] + ", ");
+    public static void showArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + ", ");
         }
         System.out.println();
     }
 
     // No método que inverte os vetores, acontecerá a mesma coisa que para o
-    // `showVector`: receberemos um vetor de inteiros, e dentro dele iremos
+    // `showArray`: receberemos um vetor de inteiros, e dentro dele iremos
     // inverter os vetores.
-    public static void invertVector(int[] vector) {
-        for (int i = 0; i < vector.length/2; i++) {
-            // Como iremos alterar vector[i], precisamos
+    public static void invertArray(int[] array) {
+        for (int i = 0; i < array.length/2; i++) {
+            // Como iremos alterar array[i], precisamos
             // de uma cópia do valor antigo (para colocar
             // no lado oposto do vetor).
-            int swap = vector[i];
+            int swap = array[i];
             // Atribuimos o valor no
-            // lado oposto do vetor em vector[i].
-            vector[i] = vector[vector.length - 1 - i];
+            // lado oposto do vetor em array[i].
+            array[i] = array[array.length - 1 - i];
             // Atribuimos o antigo valor
-            // de vector[i] na outra ponta do vetor.
-            vector[vector.length - 1 - i] = swap;
+            // de array[i] na outra ponta do vetor.
+            array[array.length - 1 - i] = swap;
         }
     }
 
@@ -103,40 +103,40 @@ public class Main {
 
         // Instanciação de vetores com valores pré-definidos, como visto na
         // aula 2.
-        int[] vector1 = { 1, 2, 3, 4, 5 };
-        int[] vector2 = { 2, 9, -3, 4 };
-        int[] vector3 = { 2 };
-        int[] vector4 = { 17, -4 };
+        int[] array1 = { 1, 2, 3, 4, 5 };
+        int[] array2 = { 2, 9, -3, 4 };
+        int[] array3 = { 2 };
+        int[] array4 = { 17, -4 };
 
         System.out.println("Vetores (antes):");
 
         // Assim como fazemos com println(...), aqui estamos invocando o método
-        // chamado `showVector`, que recebe, por parâmetro, um vetor (cujo
+        // chamado `showArray`, que recebe, por parâmetro, um vetor (cujo
         // conteúdo será exibido).
-        showVector(vector1);
-        showVector(vector2);
-        showVector(vector3);
-        showVector(vector4);
+        showArray(array1);
+        showArray(array2);
+        showArray(array3);
+        showArray(array4);
 
         // Agora basta chamar o método que inverte um vetor para cada um dos 4
         // vetores instanciados anteriormente.
-        invertVector(vector1);
-        invertVector(vector2);
-        invertVector(vector3);
-        invertVector(vector4);
+        invertArray(array1);
+        invertArray(array2);
+        invertArray(array3);
+        invertArray(array4);
 
         System.out.println("Vetores (invertidos):");
 
         // E por fim chamar novamente o método de exibir um vetor.
-        showVector(vector1);
-        showVector(vector2);
-        showVector(vector3);
-        showVector(vector4);
+        showArray(array1);
+        showArray(array2);
+        showArray(array3);
+        showArray(array4);
 
-        // Perceba que desta forma podemos usar `showVector` onde quisermos,
+        // Perceba que desta forma podemos usar `showArray` onde quisermos,
         // sem a necessidade de reescrever todos os passos dele. Essa é uma das
         // vantagens de se utilizar métodos, além de que fica mais organizado:
         // não é preciso ler o que cada `for` está fazendo para saber que se
-        // está invertendo um vetor (ou exibindo ele, no caso de `showVector`).
+        // está invertendo um vetor (ou exibindo ele, no caso de `showArray`).
     }
 }
