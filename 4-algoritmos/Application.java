@@ -8,8 +8,8 @@ public class Application {
 
         int last = data[data.length - 1];
 
-        System.out.println("--------------------" +
-                           "| Linear: " +
+        System.out.println("--------------------\n" +
+                           "| Linear: \n" +
                            "--------------------");
         System.out.printf("0 is at %d\n", ArrayUtils.linearSearch(data, 0));
         System.out.printf("1 is at %d\n", ArrayUtils.linearSearch(data, 1));
@@ -18,8 +18,8 @@ public class Application {
         System.out.printf("1000000 is at %d\n", ArrayUtils.linearSearch(data, 1000000));
         System.out.printf("%d is at %d\n", last, ArrayUtils.linearSearch(data, last));
 
-        System.out.println("--------------------" +
-                           "| Binary: " +
+        System.out.println("--------------------\n" +
+                           "| Binary: \n" +
                            "--------------------");
         System.out.printf("0 is at %d\n", ArrayUtils.binarySearch(data, 0));
         System.out.printf("1 is at %d\n", ArrayUtils.binarySearch(data, 1));
@@ -28,8 +28,8 @@ public class Application {
         System.out.printf("1000000 is at %d\n", ArrayUtils.binarySearch(data, 1000000));
         System.out.printf("%d is at %d\n", last, ArrayUtils.binarySearch(data, last));
 
-        System.out.println("--------------------" +
-                           "| Timing: " +
+        System.out.println("--------------------\n" +
+                           "| Timing: \n" +
                            "--------------------");
         System.out.print("Linear: ");
         long begin = System.nanoTime();
