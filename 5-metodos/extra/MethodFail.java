@@ -1,24 +1,24 @@
 public class MethodFail {
 
-    public static class Bla {
+    public static class MyType {
         public int x;
     }
 
     public static void main(String[] args) {
-        Bla bla = new Bla();
+        MyType foo = new MyType();
 
-        System.out.println(bla);
+        System.out.println(foo);
 
-        bla.x = 10;
-        change(bla);
+        foo.x = 10;
+        change(foo);
 
-        System.out.println(bla);
+        System.out.println(foo);
     }
 
-    public static void change(Bla bla) {
-        System.out.println(bla);
-        bla = new Bla();
-        System.out.println(bla);
+    public static void change(MyType foo) {
+        System.out.println(foo);
+        foo = new MyType();
+        System.out.println(foo);
     }
 
     public static void cubic(int value) {
