@@ -1,5 +1,5 @@
 //=============================================================================
-// Aula 03 - Métodos (Funções e Procedimentos)
+// Aula 05 - Métodos (Funções e Procedimentos)
 //-----------------------------------------------------------------------------
 // Problemática:
 // Simplificar, usando métodos, um programa que:
