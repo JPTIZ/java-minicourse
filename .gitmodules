@@ -1,0 +1,3 @@
+[submodule "course-plans"]
+	path = course-plans
+	url = git@gitlab.com:jptiz/course-plans
