@@ -13,7 +13,7 @@ public class ArrayList<T> {
     }
 
     public void remove(int index) {
-
+        // TODO
     }
 
     public T at(int index) {
