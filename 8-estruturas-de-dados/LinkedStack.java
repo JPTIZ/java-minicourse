@@ -1,4 +1,3 @@
-
 public class LinkedStack<T> {
     public void push(T value) {
         contents.insert(value, 0);
