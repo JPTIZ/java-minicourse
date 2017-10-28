@@ -52,6 +52,18 @@ public class Application {
              */
             System.out.printf("Digite a quantidade de %s",
                               products[i].name());
+
+            /**
+             * Inclusive, note: você chega a se preocupar com que atributos são
+             * utilizados para implementar `nextInt()`? Não, e por que? Porque
+             * efetivamente não importa! Você só precisa saber que é possível
+             * ler o próximo número inteiro digitado pelo usuário, mas pouco
+             * importa que atributos há em `Scanner` para isso. Por isso: foque
+             * em fazer uma boa API! Quando for criar seu próprio tipo, pense:
+             * "Que operações meu tipo pode oferecer?". *Depois* de terminar a
+             * API, aí sim, pense: "O que eu posso utilizar para implementar
+             * cada um desses métodos?", e naturalmente surgirão os atributos.
+             */
             amounts[i] = reader.nextInt();
         }
 
