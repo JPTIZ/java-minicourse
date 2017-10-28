@@ -6,8 +6,6 @@
 //  1. Mostra o conteúdo de 3 vetores;
 //  2. Inverte o conteúdo dos vetores (alterando as variáveis);
 //  3. Mostra novamente o conteúdo dos vetores (que agora estarão invertidos).
-//
-// O código original está como "Original.java".
 //=============================================================================
 
 public class Main {

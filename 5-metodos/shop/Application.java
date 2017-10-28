@@ -1,7 +1,26 @@
+/**
+ * Este exemplo ilustra o uso de métodos para simplicicação e melhoria da
+ * manutenibilidade de nossos códigos, utilizando de base o código da loja.
+ *
+ * Comece pelo arquivo `Product.java`, leia as explicações de lá, e em seguida
+ * volte para este arquivo.
+ *
+ * Em resumo, com métodos conseguimos:
+ *
+ *   1. Evitar problemas de duplicação de código/
+ *   2. Não atar a implementação de outras classes à implementações internas de
+ *      nossas classes.
+ *   3. Fornecer formas padronizadas de comunicação entre objetos, o que
+ *      refletirá mais a frente quando vermos `interface`'s.
+ */
 import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
+        /**
+         * Sem muito mistério, criamos 4 produtos em nossa loja, cada um com
+         * seu nome e preço.
+         */
         Product[] products = {
                 new Product("Pão", 50),
                 new Product("Leite", 280),
@@ -9,28 +28,42 @@ public class Application {
                 new Product("Pizza", 899),
         };
 
-        int[] amounts = new int[4];
+        /**
+         * "Quantidade" (a comprada, não a em estoque) não é uma característica
+         * de um produto, e portanto controlamos ela separadamente. O ideal é
+         * ter uma classe especializada em representar um item do carrinho de
+         * compras (referenciando um produto e a quantidade comprada dele), mas
+         * manteremos a simplicidade por enquanto.
+         */
+        int[] amounts = new int[products.length];
+
+        // Instanciamos um leitor de entrada do usuário
         Scanner reader = new Scanner(System.in);
 
         for (int i = 0; i < products.length; i++) {
+            /**
+             * Perceba que, para saber o nome de um produto, não acessamos seu
+             * atributo diretamente, e sim fazemos uma chamada de função que
+             * terá o único objetivo de nos informar o nome do produto. Assim,
+             * se a implementação interna de `Product` mudar, este código não
+             * precisará sofrer alterações, afinal, temos uma interface em
+             * comum que são os métodos, e a assinatura e retorno deles não
+             * variam tanto quanto atributos.
+             */
             System.out.printf("Digite a quantidade de %s",
-                              products[i].getName());
+                              products[i].name());
             amounts[i] = reader.nextInt();
         }
 
         int total = 0;
         for (int i = 0; i < products.length; i++) {
-            int totalProduct = amounts[i] * products[i].getPrice();
+            int price = amounts[i] * products[i].price();
             System.out.printf("Total gasto com %s: R$%d\n",
-                              products[i].getName(),
-                              totalProduct);
-            total += totalProduct;
+                              products[i].name(),
+                              price);
+            total += price;
         }
 
         System.out.printf("Total da compra: R$%d\n", total);
     }
 }
-
-
-
-
