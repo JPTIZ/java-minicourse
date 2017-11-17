@@ -1,4 +1,4 @@
-public class LinkedList<T> {
+public class LinkedList<T> implements List<T> {
     public void add(T value) {
         insert(value, size);
     }
@@ -78,9 +78,3 @@ public class LinkedList<T> {
     private Node head = null;
     private int size = 0;
 }
-
-
-
-
-
-

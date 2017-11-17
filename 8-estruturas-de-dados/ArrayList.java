@@ -1,4 +1,4 @@
-public class ArrayList<T> {
+public class ArrayList<T> implements List<T> {
     public void add(T value) {
         if (size == data.length) {
             @SuppressWarnings("unchecked")
