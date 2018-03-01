@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 public class Database implements Serializable {
-    public static final long serialVersionUID = 1L;
+    public static final var serialVersionUID = 1L;
 
     private Database() {}
 
@@ -18,9 +18,9 @@ public class Database implements Serializable {
             throws IOException, ClassNotFoundException
     {
         try {
-            FileInputStream file = new FileInputStream(filename);
-            ObjectInputStream objectStream = new ObjectInputStream(file);
-            Database database = (Database)objectStream.readObject();
+            var file = new FileInputStream(filename);
+            var objectStream = new ObjectInputStream(file);
+            var database = (Database)objectStream.readObject();
             objectStream.close();
             file.close();
             return database;
@@ -34,8 +34,8 @@ public class Database implements Serializable {
 
     public void dump() {
         try {
-            FileOutputStream file = new FileOutputStream(filename);
-            ObjectOutputStream objectStream = new ObjectOutputStream(file);
+            var file = new FileOutputStream(filename);
+            var objectStream = new ObjectOutputStream(file);
             objectStream.writeObject(this);
             objectStream.close();
             file.close();
@@ -48,7 +48,7 @@ public class Database implements Serializable {
 
     public void addUser(String name) {
         ++userCount;
-        User user = new User(userCount, name);
+        var user = new User(userCount, name);
         users.put(user.id(), user);
     }
 
@@ -65,7 +65,7 @@ public class Database implements Serializable {
         return null;
     }
 
-    private String filename = "database.bin";
+    private var filename = "database.bin";
     private HashMap<Integer, User> users = new HashMap<>();
-    private int userCount = 0;
+    private var userCount = 0;
 }

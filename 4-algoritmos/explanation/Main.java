@@ -70,7 +70,7 @@ public class Main {
     //       vetor de inteiros dentro dos parênteses.
     //
     public static void show(int[] array) {
-        for (int i = 0; i < array.length; i++) {
+        for (var i = 0; i < array.length; i++) {
             System.out.print(array[i] + ", ");
         }
         System.out.println();
@@ -80,10 +80,10 @@ public class Main {
     // `show`: receberemos um vetor de inteiros, e dentro dele iremos inverter
     // os vetores.
     public static void reverse(int[] array) {
-        for (int i = 0; i < array.length/2; i++) {
+        for (var i = 0; i < array.length/2; i++) {
             // Como iremos alterar array[i], precisamos de uma cópia do valor
             // antigo (para colocar no lado oposto do vetor).
-            int swap = array[i];
+            var swap = array[i];
             // Atribuimos o valor no lado oposto do vetor em array[i].
             array[i] = array[array.length - 1 - i];
             // Atribuimos o antigo valor de array[i] na outra ponta do vetor.
@@ -95,10 +95,10 @@ public class Main {
 
         // Instanciação de vetores com valores pré-definidos, como visto na
         // aula 2.
-        int[] array1 = { 1, 2, 3, 4, 5 };
-        int[] array2 = { 2, 9, -3, 4 };
-        int[] array3 = { 2 };
-        int[] array4 = { 17, -4 };
+        var array1 = { 1, 2, 3, 4, 5 };
+        var array2 = { 2, 9, -3, 4 };
+        var array3 = { 2 };
+        var array4 = { 17, -4 };
 
         System.out.println("Vetores (antes):");
 

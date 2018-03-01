@@ -28,9 +28,9 @@ public class Game {
                 "S/N: "
         );
 
-        Scanner reader = new Scanner(System.in);
+        var reader = new Scanner(System.in);
         while (true) {
-            String answer = reader.nextLine();
+            var answer = reader.nextLine();
             if (answer.equals("S")) {
                 break;
             } else if (answer.equals("N")) {
@@ -60,7 +60,7 @@ public class Game {
                 "Seja bem-vindo, %s.\n", heroes[0].getName()
         );
 
-        Adventure adventure = new Adventure(this);
+        var adventure = new Adventure(this);
         adventure.start();
     }
 

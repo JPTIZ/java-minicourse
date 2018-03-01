@@ -1,12 +1,12 @@
 public class Application {
     public static void main(String... args) {
-        int[] data = new int[1000000];
+        var data = new int[1000000];
 
-        for (int i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
             data[i] = 2*i;
         }
 
-        int last = data[data.length - 1];
+        var last = data[data.length - 1];
 
         System.out.println("--------------------\n" +
                            "| Linear: \n" +
@@ -32,9 +32,9 @@ public class Application {
                            "| Timing: \n" +
                            "--------------------");
         System.out.print("Linear: ");
-        long begin = System.nanoTime();
+        var begin = System.nanoTime();
         ArrayUtils.linearSearch(data, last);
-        long end = System.nanoTime();
+        var end = System.nanoTime();
 
         System.out.printf("%dms\n", (end - begin) / 1000);
 

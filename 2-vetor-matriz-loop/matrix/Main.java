@@ -21,7 +21,7 @@ public class Main {
 
         // Será necessário um acumulador, que será incrementado com o valor
         // de cada elemento menor que 10 da matriz
-        int sum = 0;
+        var sum = 0;
 
         // Tendo reservadas as variáveis necessárias, agora basta percorrer
         // cada linha da matriz.

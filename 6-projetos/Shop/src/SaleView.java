@@ -22,8 +22,8 @@ public class SaleView {
 
     public void listProducts(ArrayList<Product> products) {
         System.out.println("Cód. | Nome");
-        for (int i = 0; i < products.size(); i++) {
-            Product product = products.get(i);
+        for (var i = 0; i < products.size(); i++) {
+            var product = products.get(i);
             System.out.printf(
                     " %3d | %s \n",
                     i,
@@ -40,5 +40,5 @@ public class SaleView {
         System.out.println("Erro: " + message);
     }
 
-    private Scanner reader = new Scanner(System.in);
+    private var reader = new Scanner(System.in);
 }

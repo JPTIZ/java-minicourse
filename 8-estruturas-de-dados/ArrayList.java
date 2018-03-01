@@ -2,8 +2,8 @@ public class ArrayList<T> implements List<T> {
     public void add(T value) {
         if (size == data.length) {
             @SuppressWarnings("unchecked")
-            T[] newData = (T[])new Object[data.length * 2];
-            for (int i = 0; i < size; i++) {
+            var newData = (T[])new Object[data.length * 2];
+            for (var i = 0; i < size; i++) {
                 newData[i] = data[i];
             }
             data = newData;
@@ -25,6 +25,6 @@ public class ArrayList<T> implements List<T> {
     }
 
     @SuppressWarnings("unchecked")
-    private T[] data = (T[])new Object[4];
-    private int size = 0;
+    private var data = (T[])new Object[4];
+    private var size = 0;
 }

@@ -6,8 +6,8 @@ public class Adventure {
     }
 
     public void start() {
-        Scanner reader = new Scanner(System.in);
-        int option = 0;
+        var reader = new Scanner(System.in);
+        var option = 0;
         while (option != 4) {
             System.out.println(
                     "O que você deseja fazer?\n" +
@@ -43,9 +43,9 @@ public class Adventure {
     }
 
     public void hunt() {
-        int enemyGroupId = (int)(Math.random() * 4);
+        var enemyGroupId = (int)(Math.random() * 4);
 
-        BattleScene battle = new BattleScene(game, enemyGroupId);
+        var battle = new BattleScene(game, enemyGroupId);
         battle.start();
     }
 

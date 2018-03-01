@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class MainMenuController {
     public void start() {
-        int option = 0;
+        var option = 0;
         while (option != 4) {
             option = view.showOptions();
             switch (option) {
@@ -24,8 +24,8 @@ public class MainMenuController {
     }
 
     private void onSelectCreateProduct() {
-        String name = view.askProductName();
-        int price = view.askProductPrice();
+        var name = view.askProductName();
+        var price = view.askProductPrice();
 
         if (name.isEmpty()) {
             view.showWarning("O nome não pode ser vazio.");
@@ -38,5 +38,5 @@ public class MainMenuController {
     }
 
     private ArrayList<Product> products = new ArrayList<>();
-    private MainMenuView view = new MainMenuView();
+    private var view = new MainMenuView();
 }

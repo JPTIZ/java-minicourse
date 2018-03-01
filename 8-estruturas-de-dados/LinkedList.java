@@ -9,8 +9,8 @@ public class LinkedList<T> implements List<T> {
         } else if (index == 0) {
             head = new Node(value, head);
         } else {
-            Node it = head;
-            for (int i = 0; i < index - 1; i++) {
+            var it = head;
+            for (var i = 0; i < index - 1; i++) {
                 it = it.next;
             }
             it.next = new Node(value);
@@ -29,8 +29,8 @@ public class LinkedList<T> implements List<T> {
         if (index == 0) {
             head = head.next;
         } else {
-            Node it = head;
-            for (int i = 0; i < index - 1; i++) {
+            var it = head;
+            for (var i = 0; i < index - 1; i++) {
                 it = it.next;
             }
             it.next = it.next.next;
@@ -46,8 +46,8 @@ public class LinkedList<T> implements List<T> {
             throw new IndexOutOfBoundsException(index + " >= " + size);
         }
 
-        Node it = head;
-        for (int i = 0; i < index; i++) {
+        var it = head;
+        for (var i = 0; i < index; i++) {
             it = it.next;
         }
         return it.value;
@@ -58,7 +58,7 @@ public class LinkedList<T> implements List<T> {
     }
 
     public boolean empty() {
-        return size == 0;
+        var size == 0;
     }
 
     private class Node {
@@ -72,9 +72,9 @@ public class LinkedList<T> implements List<T> {
         }
 
         T value;
-        Node next = null;
+        var next = null;
     }
 
-    private Node head = null;
-    private int size = 0;
+    private var head = null;
+    private var size = 0;
 }

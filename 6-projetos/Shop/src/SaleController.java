@@ -7,19 +7,19 @@ public class SaleController {
     }
 
     public void start() {
-        int option = 0;
+        var option = 0;
         while (option != 3 && option != 4) {
             option = view.showOptions();
             switch (option) {
             case 1:
                 {
                     view.listProducts(products);
-                    int productId = view.askProduct();
+                    var productId = view.askProduct();
 
                     if (productId < 0 || productId >= products.size()) {
                         view.showWarning("Código inválido");
                     } else {
-                        int amount = view.askAmount();
+                        var amount = view.askAmount();
                         items.put(products.get(productId), amount);
                     }
                 }
@@ -27,7 +27,7 @@ public class SaleController {
             case 2:
                 {
                     view.listProducts(products);
-                    int productId = view.askProduct();
+                    var productId = view.askProduct();
 
 
                     if (productId < 0 || productId >= products.size()) {
@@ -48,6 +48,6 @@ public class SaleController {
     }
 
     private HashMap<Product, Integer> items = new HashMap<>();
-    private SaleView view = new SaleView();
+    private var view = new SaleView();
     private ArrayList<Product> products;
 }

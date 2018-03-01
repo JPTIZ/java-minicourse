@@ -31,7 +31,7 @@ public class UserEditorView {
                 "2. Editar usuário\n" +
                 "3. Sair\n" +
                 "Resposta: ");
-        int option = reader.nextInt();
+        var option = reader.nextInt();
         switch (option) {
             case 1: return MenuOption.INSERT;
             case 2: return MenuOption.EDIT;
@@ -72,6 +72,6 @@ public class UserEditorView {
         return database.userByName(reader.next());
     }
 
-    private Scanner reader = new Scanner(System.in);
+    private var reader = new Scanner(System.in);
     private Database database;
 }

@@ -21,7 +21,7 @@ public class Application {
          * Sem muito mistério, criamos 4 produtos em nossa loja, cada um com
          * seu nome e preço.
          */
-        Product[] products = {
+        var products = {
                 new Product("Pão", 50),
                 new Product("Leite", 280),
                 new Product("Suco", 400),
@@ -35,12 +35,12 @@ public class Application {
          * compras (referenciando um produto e a quantidade comprada dele), mas
          * manteremos a simplicidade por enquanto.
          */
-        int[] amounts = new int[products.length];
+        var amounts = new int[products.length];
 
         // Instanciamos um leitor de entrada do usuário
-        Scanner reader = new Scanner(System.in);
+        var reader = new Scanner(System.in);
 
-        for (int i = 0; i < products.length; i++) {
+        for (var i = 0; i < products.length; i++) {
             /**
              * Perceba que, para saber o nome de um produto, não acessamos seu
              * atributo diretamente, e sim fazemos uma chamada de função que
@@ -67,9 +67,9 @@ public class Application {
             amounts[i] = reader.nextInt();
         }
 
-        int total = 0;
-        for (int i = 0; i < products.length; i++) {
-            int price = amounts[i] * products[i].price();
+        var total = 0;
+        for (var i = 0; i < products.length; i++) {
+            var price = amounts[i] * products[i].price();
             System.out.printf("Total gasto com %s: R$%d\n",
                               products[i].name(),
                               price);

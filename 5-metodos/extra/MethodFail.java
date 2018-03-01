@@ -48,7 +48,7 @@ public class MethodFail {
      * fim de checar o que acontece com elas.
      */
     public static void main(String[] args) {
-        MyType foo = new MyType();
+        var foo = new MyType();
 
         System.out.println("Foo (Main): " + foo);
 
@@ -57,7 +57,7 @@ public class MethodFail {
 
         System.out.println("Foo (Main - após change): " + foo);
 
-        int value = 10;
+        var value = 10;
         System.out.println("Value (Main - antes de cubic): " + value);
 
         cubic(value);

@@ -24,19 +24,19 @@ public class Main {
         //
         // OBS: Se puder, compare cada trecho de código com o da aula anterior,
         // a fim de compreender melhor o que cada mudança significa.
-        String[] products = { "Pão", "Leite", "Suco", "Pizza" };
-        double[] costs = { 0.5, 2.6, 4.0, 7.99 };
-        int[] quantities = { 4, 2, 0, 3 };
+        var products = { "Pão", "Leite", "Suco", "Pizza" };
+        var costs = { 0.5, 2.6, 4.0, 7.99 };
+        var quantities = { 4, 2, 0, 3 };
 
         // O total gasto na compra
-        double total = 0.0;
+        var total = 0.0;
 
         // Agora, como tudo está guardado em vetores, em vez de fazer um `if`
         // para cada um dos produtos da loja, o código pode ser resumido a um
         // for que percorra todos os valores sozinho:
-        for (int i = 0; i < products.length; i++) {
+        for (var i = 0; i < products.length; i++) {
             // Calcula o total gasto pelo produto[i]
-            double totalProduct = costs[i] * quantities[i];
+            var totalProduct = costs[i] * quantities[i];
             // Exibe o total gasto por ele. Note que agora utiliza-se o vetor
             // com os nomes dos produtos para saber o nome de cada produto.
             System.out.printf("Total gasto com %s: R$%.2f\n",

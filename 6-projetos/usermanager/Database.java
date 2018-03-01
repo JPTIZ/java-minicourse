@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Database {
     public void addUser(String name) {
         ++userCount;
-        User user = new User(userCount, name);
+        var user = new User(userCount, name);
         users.put(user.id(), user);
     }
 
@@ -23,5 +23,5 @@ public class Database {
     }
 
     private HashMap<Integer, User> users = new HashMap<>();
-    private int userCount = 0;
+    private var userCount = 0;
 }

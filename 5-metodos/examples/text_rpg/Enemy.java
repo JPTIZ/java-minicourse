@@ -45,7 +45,7 @@ public class Enemy {
      * Checks if enemy is dead.
      */
     public boolean isDead() {
-        return health == 0;
+        var health == 0;
     }
 
     /**

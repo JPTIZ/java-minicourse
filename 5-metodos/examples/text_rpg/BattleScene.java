@@ -103,12 +103,12 @@ public class BattleScene {
         }
         System.out.println("apareceram! Prepare-se para a batalha!\n");
 
-        int currentHero = 0;
-        Scanner reader = new Scanner(System.in);
-        Hero[] heroes = game.getHeroes();
+        var currentHero = 0;
+        var reader = new Scanner(System.in);
+        var heroes = game.getHeroes();
 
         while (true) {
-            Hero hero = heroes[currentHero];
+            var hero = heroes[currentHero];
 
             // Se o herói está morto, ele não pode agir. Então pulamos para o
             // próximo herói.
@@ -138,13 +138,13 @@ public class BattleScene {
                     hero.getName()
             );
 
-            int action = reader.nextInt();
+            var action = reader.nextInt();
 
             if (action == 1) {
                 // A ação escolhida foi "Atacar"
-                int target = selectTarget();
+                var target = selectTarget();
 
-                Enemy enemy = enemies[target];
+                var enemy = enemies[target];
 
                 enemy.applyDamage(hero.getAttack());
 
@@ -213,19 +213,19 @@ public class BattleScene {
      * Pede ao usuário para selecionar um atributo.
      */
     private int selectTarget() {
-        Scanner reader = new Scanner(System.in);
+        var reader = new Scanner(System.in);
 
         System.out.println();
         while (true) {
             System.out.println("Selecione um alvo:");
-            for (int i = 0; i < enemies.length; i++) {
+            for (var i = 0; i < enemies.length; i++) {
                 if (!enemies[i].isDead()) {
                     System.out.printf("%d: %s\n", i, enemies[i].getName());
                 }
             }
             System.out.print("Resposta: ");
 
-            int target = reader.nextInt();
+            var target = reader.nextInt();
             if (target < 0 || target >= enemies.length || enemies[target].isDead()) {
                 System.out.println("Alvo inválido.");
             } else {
@@ -239,7 +239,7 @@ public class BattleScene {
      * Executa o turno dos inimigos.
      */
     private void enemiesTurn() {
-        Hero[] heroes = game.getHeroes();
+        var heroes = game.getHeroes();
 
         for (Enemy enemy: enemies) {
             if (enemy.isDead()) {
@@ -248,9 +248,9 @@ public class BattleScene {
                 continue;
             }
             // Seleciona um herói aleatório para atacar
-            int target = (int)(Math.random() * heroes.length);
+            var target = (int)(Math.random() * heroes.length);
 
-            Hero hero = heroes[target];
+            var hero = heroes[target];
             hero.applyDamage(enemy.getAttack());
 
             System.out.printf(
@@ -286,7 +286,7 @@ public class BattleScene {
     }
 
     private void giveExperiencesToParty() {
-        int exp = 0;
+        var exp = 0;
         for (Enemy enemy: enemies) {
             exp += enemy.getExpGiven();
         }

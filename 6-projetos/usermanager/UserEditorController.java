@@ -9,7 +9,7 @@ public class UserEditorController {
     }
 
     public void start() {
-        MenuOption option = MenuOption.INSERT;
+        var option = MenuOption.INSERT;
         while (option != MenuOption.EXIT) {
             option = view.askMenuOption();
             switch (option) {
@@ -29,7 +29,7 @@ public class UserEditorController {
     public void insertUser() {
         view.show("Cadastrando usuário...");
         while (true) {
-            String name = view.askUserName();
+            var name = view.askUserName();
             if (name.trim().isEmpty()) {
                 view.showError("O nome não pode ser vazio.");
             } else {
@@ -52,7 +52,7 @@ public class UserEditorController {
 
         view.show("Editando usuário " + user.name());
         while (true) {
-            String name = view.askUserName();
+            var name = view.askUserName();
             if (name.trim().isEmpty()) {
                 view.showError("O nome não pode ser vazio.");
             } else {

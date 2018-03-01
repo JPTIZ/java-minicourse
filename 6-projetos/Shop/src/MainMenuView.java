@@ -36,5 +36,5 @@ public class MainMenuView {
         System.out.println(message);
     }
 
-    private Scanner reader = new Scanner(System.in);
+    private var reader = new Scanner(System.in);
 }

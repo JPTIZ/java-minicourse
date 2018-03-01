@@ -76,7 +76,7 @@ public class Hero {
      * Checks if hero is dead.
      */
     public boolean isDead() {
-        return health == 0;
+        var health == 0;
     }
 
     /**
