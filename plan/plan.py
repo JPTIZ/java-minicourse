@@ -6,7 +6,7 @@ if __name__ == '__main__':
             title='Minicurso de Java Moderno',
             hours={
                 'theoretical': 10,
-                'practice': 8,
+                'practice': 10,
                 },
             start=Month.MARCH,
             end=Month.JUNE,
@@ -17,13 +17,13 @@ if __name__ == '__main__':
                 'Interessados na linguagem Java',
                 ],
             requires=[
-                'Nenhum.',
+                'Nenhum',
                 ],
             goals=Goals(
                 general='Auxiliar na aprendizagem das disciplinas de'
                         ' Programação Orientada a Objetos 1 e 2, demonstrando,'
                         ' através da criação de um projeto de escolha dos'
-                        ' alunos os recursos da linguagem, boas práticas,'
+                        ' alunos, os recursos da linguagem, boas práticas,'
                         ' reusabilidade, \\textit{tradeoffs} entre soluções'
                         ' (performance, uso de memória, manutenção...) e as'
                         ' novidades nas versões mais recentes.',
@@ -64,6 +64,9 @@ if __name__ == '__main__':
 
                     'Demonstrar o uso dos recursos recentes e progressão da'
                     ' linguagem Java',
+
+                    'Demonstrar o funcionamento interno da JVM (\\textit{Java'
+                    ' Virtual Machine})',
                     ],
                 ),
             topics=[
@@ -73,11 +76,10 @@ if __name__ == '__main__':
                     items=[
                         'Características principais da linguagem',
                         '\\textit{Bytecode} e Processo de compilação',
-                        'Introdução à JVM (\\textit{Java Virtual Machine})',
                         'Introdução ao paradigma imperativo',
                         'Tipos primitivos',
-                        'Estruturas condicionais: \\texttt{if}',
                         'Inferência de tipo',
+                        'Estruturas condicionais: \\texttt{if}',
                     ],
                 ),
                 Topic(
@@ -87,7 +89,7 @@ if __name__ == '__main__':
                         'Laço de repetição \\textit{for}',
                         '\\textit{Raw-Arrays}',
                         'Tempo de vida de variáveis: Escopo',
-                        '\\textit{Foreach}',
+                        '\\textit{For-each}',
                     ],
                 ),
                 Topic(
@@ -95,7 +97,7 @@ if __name__ == '__main__':
                     duration=2,
                     items=[
                         'Introdução a funções e procedimentos',
-                        'Busca linear e binária',
+                        'Busca linear',
                         'Complexidade de Algoritmos',
                         'Notação assintótica',
                         '\\textit{Bubble-Sort}',
@@ -115,9 +117,8 @@ if __name__ == '__main__':
                     title='Métodos',
                     duration=2,
                     items=[
+                        'Método Construtor',
                         'Cópia e Referência',
-                        'Depuração de código',
-                        'Encapsulamento de atributos',
                         'Boas práticas: API\\@',
                         'Documentação de código',
                     ],
@@ -127,6 +128,7 @@ if __name__ == '__main__':
                     duration=2,
                     items=[
                         'Processamento de texto',
+                        'Laço de repetição: \\textit{while}',
                         'Introdução a segurança',
                         'Formato JSON',
                         'Operações em arquivos',
@@ -156,6 +158,7 @@ if __name__ == '__main__':
                     title='Pacotes e bibliotecas',
                     duration=2,
                     items=[
+                        'Versionamento Git',
                         'Sistema de pacotes Java',
                         '\\textit{Classpath}',
                         'Arquivo JAR\\@',
@@ -177,8 +180,8 @@ if __name__ == '__main__':
                     title='(Extra) Otimização',
                     duration=2,
                     items=[
+                        'Passos de otimização',
                         '\\textit{Tail-call recursion}',
-                        '\\textit{Inline}',
                         '\\textit{JIT Compilation}',
                         'Otimizações da JVM\\@',
                     ],

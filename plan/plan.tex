@@ -24,9 +24,9 @@
     \item[]
         \hspace{-1em}
         \begin{tabular}{ccc}
-            Carga Horária: 18 horas-aula&
+            Carga Horária: 20 horas-aula&
             Teóricas: 10&
-            Práticas: 8
+            Práticas: 10
         \end{tabular}
     \item[] Período: Março a Junho de
                      2018.
@@ -41,24 +41,24 @@
 
 \section{Requisitos}
 \begin{itemize}
-    \item[] Nenhum..
+    \item[] Nenhum.
 \end{itemize}
 
 \section{Ementa}
+\begin{samepage}
 \begin{itemize*}[label={}]
     \item[] Características principais da linguagem;
     \item[] \textit{Bytecode} e Processo de compilação;
-    \item[] Introdução à JVM (\textit{Java Virtual Machine});
     \item[] Introdução ao paradigma imperativo;
     \item[] Tipos primitivos;
-    \item[] Estruturas condicionais: \texttt{if};
-    \item[] Inferência de tipo.
+    \item[] Inferência de tipo;
+    \item[] Estruturas condicionais: \texttt{if}.
     \item[] Laço de repetição \textit{for};
     \item[] \textit{Raw-Arrays};
     \item[] Tempo de vida de variáveis: Escopo;
-    \item[] \textit{Foreach}.
+    \item[] \textit{For-each}.
     \item[] Introdução a funções e procedimentos;
-    \item[] Busca linear e binária;
+    \item[] Busca linear;
     \item[] Complexidade de Algoritmos;
     \item[] Notação assintótica;
     \item[] \textit{Bubble-Sort}.
@@ -66,12 +66,12 @@
     \item[] Alocação de memória na JVM;
     \item[] \textit{Garbage-Collection};
     \item[] Tempo de vida de objetos.
+    \item[] Método Construtor;
     \item[] Cópia e Referência;
-    \item[] Depuração de código;
-    \item[] Encapsulamento de atributos;
     \item[] Boas práticas: API\@;
     \item[] Documentação de código.
     \item[] Processamento de texto;
+    \item[] Laço de repetição: \textit{while};
     \item[] Introdução a segurança;
     \item[] Formato JSON;
     \item[] Operações em arquivos.
@@ -83,6 +83,7 @@
     \item[] \textit{Callback};
     \item[] Tipos de dados para funções;
     \item[] Funções \textit{lambda}.
+    \item[] Versionamento Git;
     \item[] Sistema de pacotes Java;
     \item[] \textit{Classpath};
     \item[] Arquivo JAR\@;
@@ -92,16 +93,17 @@
     \item[] Complexidade amortizada;
     \item[] Pilha;
     \item[] Padrão de projeto: Composição.
+    \item[] Passos de otimização.
     \item[] \textit{Tail-call recursion}.
-    \item[] \textit{Inline}.
     \item[] \textit{JIT Compilation}.
     \item[] Otimizações da JVM\@.
 \end{itemize*}
+\end{samepage}
 
 \section{Objetivos}
 
 \begin{description}
-    \item[Geral:] Auxiliar na aprendizagem das disciplinas de Programação Orientada a Objetos 1 e 2, demonstrando, através da criação de um projeto de escolha dos alunos os recursos da linguagem, boas práticas, reusabilidade, \textit{tradeoffs} entre soluções (performance, uso de memória, manutenção...) e as novidades nas versões mais recentes..
+    \item[Geral:] Auxiliar na aprendizagem das disciplinas de Programação Orientada a Objetos 1 e 2, demonstrando, através da criação de um projeto de escolha dos alunos, os recursos da linguagem, boas práticas, reusabilidade, \textit{tradeoffs} entre soluções (performance, uso de memória, manutenção...) e as novidades nas versões mais recentes..
     \item[Específico:] São objetivos do minicurso:
         \begin{itemize}[label={-}]
                 \item Apresentar os recursos básicos da linguagem Java, dentre eles:
@@ -117,7 +119,8 @@
                 \item Introduzir noções de algoritmos e resolução de problemas computacionalmente;
                 \item Criar um projeto com enfoque no uso de diferentes recursos de programação orientada a objetos (interfaces, classes, tipos abstratos, \ldots);
                 \item Expor formas de melhorar a manutenibilidade de software através de metodologias da programação moderna;
-                \item Demonstrar o uso dos recursos recentes e progressão da linguagem Java.
+                \item Demonstrar o uso dos recursos recentes e progressão da linguagem Java;
+                \item Demonstrar o funcionamento interno da JVM (\textit{Java Virtual Machine}).
         \end{itemize}
 \end{description}
 
@@ -129,11 +132,10 @@
         \begin{enumerate}
                 \item Características principais da linguagem;
                 \item \textit{Bytecode} e Processo de compilação;
-                \item Introdução à JVM (\textit{Java Virtual Machine});
                 \item Introdução ao paradigma imperativo;
                 \item Tipos primitivos;
-                \item Estruturas condicionais: \texttt{if};
-                \item Inferência de tipo.
+                \item Inferência de tipo;
+                \item Estruturas condicionais: \texttt{if}.
         \end{enumerate}
         \end{samepage}
     \item Coleções (2 horas):
@@ -142,14 +144,14 @@
                 \item Laço de repetição \textit{for};
                 \item \textit{Raw-Arrays};
                 \item Tempo de vida de variáveis: Escopo;
-                \item \textit{Foreach}.
+                \item \textit{For-each}.
         \end{enumerate}
         \end{samepage}
     \item Introdução a Algoritmos (2 horas):
         \begin{samepage}
         \begin{enumerate}
                 \item Introdução a funções e procedimentos;
-                \item Busca linear e binária;
+                \item Busca linear;
                 \item Complexidade de Algoritmos;
                 \item Notação assintótica;
                 \item \textit{Bubble-Sort}.
@@ -167,9 +169,8 @@
     \item Métodos (2 horas):
         \begin{samepage}
         \begin{enumerate}
+                \item Método Construtor;
                 \item Cópia e Referência;
-                \item Depuração de código;
-                \item Encapsulamento de atributos;
                 \item Boas práticas: API\@;
                 \item Documentação de código.
         \end{enumerate}
@@ -178,6 +179,7 @@
         \begin{samepage}
         \begin{enumerate}
                 \item Processamento de texto;
+                \item Laço de repetição: \textit{while};
                 \item Introdução a segurança;
                 \item Formato JSON;
                 \item Operações em arquivos.
@@ -204,6 +206,7 @@
     \item Pacotes e bibliotecas (2 horas):
         \begin{samepage}
         \begin{enumerate}
+                \item Versionamento Git;
                 \item Sistema de pacotes Java;
                 \item \textit{Classpath};
                 \item Arquivo JAR\@;
@@ -223,8 +226,8 @@
     \item (Extra) Otimização (2 horas):
         \begin{samepage}
         \begin{enumerate}
+                \item Passos de otimização;
                 \item \textit{Tail-call recursion};
-                \item \textit{Inline};
                 \item \textit{JIT Compilation};
                 \item Otimizações da JVM\@.
         \end{enumerate}
