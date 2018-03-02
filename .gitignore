@@ -10,3 +10,5 @@
 **/_minted*
 **/*.swp
 **/*.class
+
+__pycache__
