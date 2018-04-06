@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[portuguese]{babel}
 
+\usepackage{booktabs}
 \usepackage{color}
 \usepackage{dirtytalk}
 \usepackage{graphicx}
@@ -87,7 +88,7 @@
         \item Crie um arquivo de código Java (.java);
         \item Escreva o código (ver exemplo adiante), definindo o procedimento
             \texttt{main};
-        \item Gere o \textit{Bytecode} da aplicação, que será lido pela JVM.
+        \item Gere o \textit{Bytecode} da aplicação, que será lido pela JVM\@.
             Isso é feito pelo processo de \emph{Compilação};
         \item Execute o código chamando a JVM e indicando qual classe deve ser
             carregada. A JVM vai procurar e executar o procedimento
@@ -203,8 +204,7 @@ public class Application {
 \end{frame}
 
 \begin{frame}{Solução: Variáveis}
-    Variáveis são valores guardados na memória (geralmente RAM). Toda variável
-    possui:
+    Variáveis são valores que podem ser alterados. Toda variável possui:
     \begin{description}
         \item[Identificador:] Nome para referenciá-la no código. Deve ser único
             dentro de um mesmo escopo.
@@ -223,10 +223,16 @@ public class Application {
         Tipo nome;
     \end{minted}
 
-    É possível ainda criar uma variável e já atribuir um valor a ela, da forma:
+    É possível ainda criar uma variável e já atribuir um valor a ela:
 
     \begin{minted}{java}
         Tipo nome = valor;
+    \end{minted}
+
+    Em Java 10, o mesmo pode ser feito sem definir o tipo da variável:
+
+    \begin{minted}{java}
+        var nome = valor;
     \end{minted}
 \end{frame}
 
@@ -244,23 +250,27 @@ public class Application {
 \begin{frame}{Tipos primitivos}
     Numéros inteiros:
     \begin{center}
-        \begin{tabular}{|l|l|l|}
-            \hline Tipo           & Tamanho & Intervalo \\
-            \hline \texttt{byte}  & 1 Byte  & $-128$ a $127$ \\
-            \hline \texttt{short} & 2 Bytes & $-2^{15}$ a $2^{15}-1$ \\
-            \hline \texttt{int}   & 4 Bytes & $-2^{31}$ a $2^{31}-1$ \\
-            \hline \texttt{long}  & 8 Bytes & $-2^{63}$ a $2^{63}-1$ \\
-            \hline
+        \begin{tabular}{lll}
+            \toprule
+            Tipo           & Tamanho & Intervalo \\
+            \midrule
+            \texttt{byte}  & 1 Byte  & $-128$ a $127$ \\
+            \texttt{short} & 2 Bytes & $-2^{15}$ a $2^{15}-1$ \\
+            \texttt{int}   & 4 Bytes & $-2^{31}$ a $2^{31}-1$ \\
+            \texttt{long}  & 8 Bytes & $-2^{63}$ a $2^{63}-1$ \\
+            \bottomrule
         \end{tabular}
     \end{center}
 
     Numéros reais:
     \begin{center}
-        \begin{tabular}{|l|l|l|}
-            \hline Tipo            & Tamanho & Intervalo \\
-            \hline \texttt{float}  & 4 Bytes & $2^{-149}$ a $(2-2^{-23}) \cdot 2^{127}$ \\
-            \hline \texttt{double} & 8 Bytes & $2^{-1074}$ a $(2-2^{-52}) \cdot 2^{1023}$ \\
-            \hline
+        \begin{tabular}{lll}
+            \toprule
+            Tipo            & Tamanho & Intervalo \\
+            \midrule
+            \texttt{float}  & 4 Bytes & $2^{-149}$ a $(2-2^{-23}) \cdot 2^{127}$ \\
+            \texttt{double} & 8 Bytes & $2^{-1074}$ a $(2-2^{-52}) \cdot 2^{1023}$ \\
+            \bottomrule
         \end{tabular}
     \end{center}
 
@@ -319,9 +329,9 @@ public class Application {
         double quotient = a / b;
     \end{minted}
 
-    (OBS: Se o resultado da divisão for colocada em uma variável que represente
-    um inteiro, o resultado será \emph{truncado}, ou seja, o valor após a
-    vírgula é ignorado: $1.1 = 1$, $1.9 = 1$).
+    (OBS\@: Se o resultado da divisão for colocada em uma variável que
+    represente um inteiro, o resultado será \emph{truncado}, ou seja, o valor
+    após a vírgula é ignorado: $1.1 = 1$, $1.9 = 1$).
 \end{frame}
 
 
@@ -331,13 +341,15 @@ public class Application {
     Suponhamos que a tabela de preços da loja seja a seguinte:
 
     \begin{center}
-        \begin{tabular}{|l|l|}
-            \hline Produto & Preço \\ \hline
+        \begin{tabular}{ll}
+            \toprule
+            Produto & Preço \\
+            \midrule
             Pão   & R\$0.50 \\
             Leite & R\$3.00 \\
             Suco  & R\$5.00 \\
             Pizza & R\$9.99 \\
-            \hline
+            \bottomrule
         \end{tabular}
     \end{center}
 
@@ -397,10 +409,10 @@ public class Application {
 \end{frame}
 
 \begin{frame}[fragile]{Conversão: Texto para número}
-    Vale apontar, porém, que o tipo de dado retornado pelo
-    \texttt{readLine(\ldots)} é de texto (chamado \textbf{\texttt{String}}). Porém,
-    queremos utilizar um tipo numérico, e precisamos converter esse texto para
-    um número inteiro. Isso pode ser feito com:
+    Vale apontar, porém, que o tipo de dado retornado pelo \texttt{readLine} é
+    de texto (chamado \textbf{\texttt{String}}).  Porém, queremos utilizar um
+    tipo numérico, e precisamos converter esse texto para um número inteiro.
+    Isso pode ser feito com:
 
     \begin{minted}{java}
     Integer.parseInt(texto);
@@ -456,11 +468,13 @@ public class Application {
 
 \begin{frame}{Operadores lógicos}
     \begin{center}
-        \begin{tabular}{|c|l|}
-            \hline Operador & Descrição \\ \hline
+        \begin{tabular}{cl}
+            \toprule
+            Operador & Descrição \\
+            \midrule
             \texttt{!x} & \texttt{true} se \texttt{x} for \texttt{false} (inversor/NOT). \\
             \texttt{x == y} & \texttt{true} se os valores forem iguais. \\
-            \texttt{x $!$= y} & \texttt{true} se os valores forem diferentes. \\
+            \texttt{x\hspace{1ex}!= y} & \texttt{true} se os valores forem diferentes. \\
             \texttt{x > y} & \texttt{true} se \texttt{x} for maior do que \texttt{y}. \\
             \texttt{x < y} & \texttt{true} se \texttt{x} for menor do que \texttt{y}. \\
             \texttt{x >= y} & \texttt{true} se \texttt{x} for maior ou igual a \texttt{y}. \\
@@ -470,7 +484,7 @@ public class Application {
             & \texttt{true} (OR). \\
             \texttt{x \^{} y} & \texttt{true} se apenas \texttt{x} ou apenas \texttt{y} for \texttt{true}, \\
             & mas \textbf{não ambos ao mesmo tempo}. (XOR). \\
-            \hline
+            \bottomrule
         \end{tabular}
     \end{center}
 \end{frame}
