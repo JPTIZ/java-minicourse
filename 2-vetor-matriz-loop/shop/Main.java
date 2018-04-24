@@ -24,9 +24,9 @@ public class Main {
         //
         // OBS: Se puder, compare cada trecho de código com o da aula anterior,
         // a fim de compreender melhor o que cada mudança significa.
-        var products = { "Pão", "Leite", "Suco", "Pizza" };
-        var costs = { 0.5, 2.6, 4.0, 7.99 };
-        var quantities = { 4, 2, 0, 3 };
+        var products = new String[] { "Pão", "Leite", "Suco", "Pizza" };
+        var costs = new double[] { 0.5, 2.6, 4.0, 7.99 };
+        var quantities = new double[] { 4, 2, 0, 3 };
 
         // O total gasto na compra
         var total = 0.0;

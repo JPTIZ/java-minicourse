@@ -95,10 +95,10 @@ public class Main {
 
         // Instanciação de vetores com valores pré-definidos, como visto na
         // aula 2.
-        var array1 = { 1, 2, 3, 4, 5 };
-        var array2 = { 2, 9, -3, 4 };
-        var array3 = { 2 };
-        var array4 = { 17, -4 };
+        var array1 = new int[] { 1, 2, 3, 4, 5 };
+        var array2 = new int[] { 2, 9, -3, 4 };
+        var array3 = new int[] { 2 };
+        var array4 = new int[] { 17, -4 };
 
         System.out.println("Vetores (antes):");
 

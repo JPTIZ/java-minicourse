@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-        var products = {
+        var products = new Product[] {
                 new Product("Pão", 50),
                 new Product("Leite", 280),
                 new Product("Suco", 400),

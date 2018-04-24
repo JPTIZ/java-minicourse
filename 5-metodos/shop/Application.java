@@ -21,7 +21,7 @@ public class Application {
          * Sem muito mistério, criamos 4 produtos em nossa loja, cada um com
          * seu nome e preço.
          */
-        var products = {
+        var products = new Product[] {
                 new Product("Pão", 50),
                 new Product("Leite", 280),
                 new Product("Suco", 400),
