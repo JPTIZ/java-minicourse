@@ -31,13 +31,17 @@ $(COURSE-PDF): $(COURSE-TEX) $(COURSE-BIBREF)
 
 
 obj-pdf:
-	$(LATEX) $(basename $(COURSE-PDF))
-	bibtex   $(basename $(COURSE-PDF))
-	$(LATEX) $(basename $(COURSE-PDF))
-	$(LATEX) $(basename $(COURSE-PDF))
+	$(eval OBJNAME := $(basename $(COURSE-PDF)))
+	$(LATEX) $(OBJNAME)
+	bibtex   $(OBJNAME)
+	$(LATEX) $(OBJNAME)
+	$(LATEX) $(OBJNAME)
 
 .PHONY: clean
 
 clean:
 	rm -rf obj/
 	rm $(COURSE-TEX)
+
+clean-pdf:
+	rm $(COURSE-PDF)
