@@ -9,6 +9,7 @@
 **/*.toc
 **/*.vrb
 **/_minted*
+plan/obj
 
 # Vim
 **/*.swp
