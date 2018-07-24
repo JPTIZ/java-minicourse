@@ -10,6 +10,7 @@
 **/*.vrb
 **/_minted*
 plan/obj
+plan/plan.tex
 
 # Vim
 **/*.swp

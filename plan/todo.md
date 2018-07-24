@@ -4,15 +4,26 @@ MiniJava - TODOs
 Plano de ensino
 ---------------
 
-1. Tirar sobre padrões de projetos.
-2. Tirar sobre "um projeto simples".
-3. Tirar sobre projeto com enfoque [...].
-4. Tirar "Introdução à segurança".
-5. Ver sobre classes anônimas (talvez em prog. genérica).
-6. Adicionar "overload de função".
+- [x] Tirar sobre padrões de projetos.
+- [x] Tirar sobre "um projeto simples".
+- [x] Tirar sobre projeto com enfoque [...].
+- [x] Tirar "Introdução à segurança".
+- [x] Ver sobre classes anônimas (talvez em prog. genérica).
+- [x] Adicionar "overload de função".
 
-7. Adicionar uma aula sobre boas-práticas.
-- Elaborar ela BEM.
+- [ ] Adicionar uma aula sobre boas-práticas.
+  - Elaborar ela BEM.
+
+- [ ] Ver se cabe uma aula de:
+  - Mecanismo de alocação de memória:
+    - Alocação estática;
+    - Alocação dinâmica;
+    - Garbage collection.
+  - Aspectos gerais de linguagens imperativas:
+    - Tipagem fraca/forte;
+    - Tipagem estática/dinâmica.
+  - ^^^^^ Parece valer mais deixar 2 aulas leves e incluir esses
+    assuntos nelas.
 
 Aulas dadas
 -----------
@@ -29,4 +40,6 @@ Aulas dadas
 - Funções `min(x, y)` e `min(x, y, z)` são interessantes.
 
 4. User-types:
-- Melhorar exemplo (separar primeiro nome dado um nome completo).
+- Melhorar exemplo de função recebendo objeto como primeiro
+  parâmetro (o exemplo era: separar primeiro nome dado um nome
+  completo).

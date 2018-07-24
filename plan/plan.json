@@ -37,7 +37,7 @@
              "Além das características e funcionamento interno deles"
             ],
 
-            ["Criar um projeto simples para mostrar o uso das",
+            ["Criar pequenos programas simples para mostrar o uso das",
              " estruturas básicas da programação imperativa (comparação,",
              " seleção, repetição, funções\\ldots)"
             ],
@@ -49,16 +49,10 @@
             ["Instruir os participantes a respeito das boas práticas",
              " de programação, a fim de que façam códigos bem",
              " estruturados, reutilizáveis e legíveis, aplicando conceitos",
-             " de código-limpo e façam escolhas adequadas de padrões de",
-             " projetos"],
+             " de código-limpo e modularidade"],
 
             ["Introduzir noções de algoritmos e resolução de problemas",
              " computacionalmente"],
-
-            ["Criar um projeto com enfoque no uso de diferentes",
-             " recursos de programação orientada a objetos (interfaces,",
-             " classes, tipos abstratos, \\ldots)"
-            ],
 
             ["Expor formas de melhorar a manutenibilidade de software",
              " através de metodologias da programação moderna"
@@ -82,7 +76,7 @@
                 "Introdução ao paradigma imperativo",
                 "Tipos primitivos",
                 "Inferência de tipo",
-                "Estruturas condicionais: \\texttt{if}"
+                "Estrutura condicional \\texttt{if}"
             ]
         },
         "Coleções": {
@@ -98,6 +92,7 @@
             "duration": 2,
             "items": [
                 "Introdução a funções e procedimentos",
+                "Sobrecarga (\\textit{overload}) de função",
                 "Busca linear",
                 "Complexidade de Algoritmos",
                 "Notação assintótica",
@@ -110,26 +105,33 @@
                 "Classe, Objeto e Atributo",
                 "Alocação de memória na JVM",
                 "\\textit{Garbage-Collection}",
-                "Tempo de vida de objetos"
+                "Tempo de vida de objetos",
+                "Cópia e Referência"
             ]
         },
         "Métodos": {
             "duration": 2,
             "items": [
                 "Método Construtor",
-                "Cópia e Referência",
                 "Boas práticas: API\\@",
                 "Documentação de código"
             ]
         },
-        "Persistência": {
+        "Introdução a Estruturas de Dados": {
             "duration": 2,
             "items": [
-                "Processamento de texto",
-                "Laço de repetição: \\textit{while}",
-                "Introdução a segurança",
-                "Formato JSON",
-                "Operações em arquivos"
+                "Pilha",
+                "Padrão de projeto: Composição",
+                "Exceções"
+            ]
+        },
+        "Técnicas de programação": {
+            "duration": 2,
+            "items": [
+                "Programação defensiva",
+                "\\textit{Early-Return}",
+                "Tipagem Forte",
+                "Asserções"
             ]
         },
         "Programação genérica e polimorfismo": {
@@ -147,27 +149,26 @@
             "items": [
                 "\\textit{Callback}",
                 "Tipos de dados para funções",
+                "Classes anônimas",
                 "Funções \\textit{lambda}"
             ]
         },
         "Pacotes e bibliotecas": {
             "duration": 2,
             "items": [
-                "Versionamento Git",
                 "Sistema de pacotes Java",
                 "\\textit{Classpath}",
                 "Arquivo JAR\\@",
                 "Arquivo JAR executável"
             ]
         },
-        "Introdução a Estruturas de Dados": {
+        "Persistência": {
             "duration": 2,
             "items": [
-                "Lista com vetor",
-                "Lista encadeada",
-                "Complexidade amortizada",
-                "Pilha",
-                "Padrão de projeto: Composição"
+                "Processamento de texto",
+                "Laço de repetição: \\textit{while}",
+                "Formato JSON",
+                "Operações em arquivos"
             ]
         },
         "(Extra) Otimização": {
@@ -176,7 +177,9 @@
                 "Passos de otimização",
                 "\\textit{Tail-call recursion}",
                 "\\textit{JIT Compilation}",
-                "Otimizações da JVM\\@"
+                "Otimizações da JVM\\@",
+                "Lista com vetor",
+                "Complexidade amortizada"
             ]
         }
     },
