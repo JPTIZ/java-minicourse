@@ -5,8 +5,8 @@
         "theoretical": 10,
         "practice": 10
     },
-    "start": 3,
-    "end": 5,
+    "start": 8,
+    "end": 11,
     "year": 2018,
     "targets": [
         "Ciência da Computação",
@@ -74,7 +74,7 @@
                 "Características principais da linguagem",
                 "\\textit{Bytecode} e Processo de compilação",
                 "Introdução ao paradigma imperativo",
-                "Tipos primitivos",
+                "Tipos primitivos e \\textit{String}",
                 "Inferência de tipo",
                 "Estrutura condicional \\texttt{if}"
             ]
@@ -91,27 +91,27 @@
         "Introdução a Algoritmos": {
             "duration": 2,
             "items": [
-                "Introdução a funções e procedimentos",
+                "Funções e procedimentos",
                 "Sobrecarga (\\textit{overload}) de função",
                 "Busca linear",
                 "Complexidade de Algoritmos",
-                "Notação assintótica",
-                "\\textit{Bubble-Sort}"
+                "Notação assintótica"
             ]
         },
         "Tipos definidos por usuário": {
             "duration": 2,
             "items": [
                 "Classe, Objeto e Atributo",
-                "Alocação de memória na JVM",
+                "Alocação Dinâmica",
                 "\\textit{Garbage-Collection}",
-                "Tempo de vida de objetos",
-                "Cópia e Referência"
+                "Tempo de vida de objetos"
             ]
         },
         "Métodos": {
             "duration": 2,
             "items": [
+                "\\textit{Message-Passing}",
+                "Cópia e Referência",
                 "Método Construtor",
                 "Boas práticas: API\\@",
                 "Documentação de código"
@@ -120,36 +120,39 @@
         "Introdução a Estruturas de Dados": {
             "duration": 2,
             "items": [
-                "Pilha",
+                "Estrutura de Dados: Pilha",
                 "Padrão de projeto: Composição",
-                "Exceções"
+                "Programação Defensiva via Exceções e Asserções",
+                "Polimorfismo Estático via \\textit{Generics}",
+                "\\textit{Type-erasure}"
+            ]
+        },
+        "Polimorfismo Dinâmico": {
+            "duration": 2,
+            "items": [
+                "Interfaces",
+                "\\textit{Lazy-Evaluation}",
+                "Métodos \\textit{default}",
+                "Classes abstratas",
+                "Herança e problema do diamante"
             ]
         },
         "Técnicas de programação": {
             "duration": 2,
             "items": [
-                "Programação defensiva",
+                "Boas práticas: Manutenção",
+                "\\textit{Design-By-Contract}",
                 "\\textit{Early-Return}",
-                "Tipagem Forte",
-                "Asserções"
+                "Teoria de Tipos: Tipagem Estática",
+                "Teoria de Tipos: Tipagem Forte"
             ]
         },
-        "Programação genérica e polimorfismo": {
-            "duration": 2,
-            "items": [
-                "Interfaces",
-                "Métodos \\textit{default}",
-                "Classes abstratas",
-                "Herança e problema do diamante",
-                "\\textit{Generics}"
-            ]
-        },
-        "API funcional": {
+        "Programação Funcional": {
             "duration": 2,
             "items": [
                 "\\textit{Callback}",
-                "Tipos de dados para funções",
-                "Classes anônimas",
+                "API Funcional de Java",
+                "Classes Anônimas",
                 "Funções \\textit{lambda}"
             ]
         },
@@ -158,27 +161,19 @@
             "items": [
                 "Sistema de pacotes Java",
                 "\\textit{Classpath}",
-                "Arquivo JAR\\@",
+                "Makefiles",
+                "Arquivo JAR como biblioteca",
                 "Arquivo JAR executável"
-            ]
-        },
-        "Persistência": {
-            "duration": 2,
-            "items": [
-                "Processamento de texto",
-                "Laço de repetição: \\textit{while}",
-                "Formato JSON",
-                "Operações em arquivos"
             ]
         },
         "(Extra) Otimização": {
             "duration": 2,
             "items": [
-                "Passos de otimização",
-                "\\textit{Tail-call recursion}",
-                "\\textit{JIT Compilation}",
+                "Otimizações de Arquitetura",
+                "Otimizações de Compiladores",
                 "Otimizações da JVM\\@",
-                "Lista com vetor",
+                "Compilação \\textit{JIT} e \\textit{AOT}",
+                "\\textit{Tail-call recursion}",
                 "Complexidade amortizada"
             ]
         }
